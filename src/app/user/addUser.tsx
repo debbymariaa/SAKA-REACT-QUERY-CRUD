@@ -12,12 +12,7 @@ import {
   InputLabel,
   Typography,
 } from "@mui/material";
-import type { UserProps } from "../types/type";
-
-interface UserFormProps {
-  isEdit: boolean;
-  userId: string;
-}
+import type { UserFormProps, UserProps } from "../types/type";
 
 export const UserForm: React.FC<Partial<UserFormProps>> = ({
   isEdit = false,
@@ -170,7 +165,7 @@ export const UserForm: React.FC<Partial<UserFormProps>> = ({
           name="password"
           type="password"
           value={""}
-          onChange={handleChange}
+          onChange={handleChange} 
           fullWidth
           margin="normal"
         />

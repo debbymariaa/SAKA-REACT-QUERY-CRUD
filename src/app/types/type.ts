@@ -7,3 +7,8 @@ export interface UserProps {
     foto?: string;
 	status: 'published' | 'draft';
 }
+
+export interface UserFormProps {
+    isEdit: boolean;
+    userId: string;
+  }

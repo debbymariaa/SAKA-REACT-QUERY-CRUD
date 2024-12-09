@@ -3,7 +3,7 @@ import { baseURL, headers, url_user } from "../utils";
 
 export const getUser = async (page: number, limit: number) => {
     const res = await fetch(
-        `${baseURL}${url_user}?filter[_and][0][status][_eq]=published&page=${page}&limit=${limit}`, // Add pagination parameters
+        `${baseURL}${url_user}?filter[_and][0][status][_eq]=published&page=${page}&limit=${limit}`,
         {
             method: "GET",
             headers: headers,
